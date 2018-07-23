@@ -74,7 +74,6 @@ public class DetailCategoryFragment extends Fragment implements View.OnClickList
                 FragmentManager mFragmentManager = getChildFragmentManager();
                 mOptionDialogFragment.show(mFragmentManager, OptionDialogFragment.class.getSimpleName());
                 break;
-        }
-
+        }eko;
     }
 }
