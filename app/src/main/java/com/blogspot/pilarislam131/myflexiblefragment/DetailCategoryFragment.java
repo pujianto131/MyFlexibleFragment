@@ -2,6 +2,7 @@ package com.blogspot.pilarislam131.myflexiblefragment;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -62,6 +63,8 @@ public class DetailCategoryFragment extends Fragment implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_profile:
+                Intent mIntens = new Intent(getActivity(), ProfilActivity.class);
+                startActivity(mIntens);
                 break;
             case R.id.btn_show_dialog:
                 OptionDialogFragment mOptionDialogFragment = new OptionDialogFragment();
@@ -74,6 +77,6 @@ public class DetailCategoryFragment extends Fragment implements View.OnClickList
                 FragmentManager mFragmentManager = getChildFragmentManager();
                 mOptionDialogFragment.show(mFragmentManager, OptionDialogFragment.class.getSimpleName());
                 break;
-        }eko;
+        }
     }
 }
